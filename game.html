@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Dinosaur Game</title>
+        <link rel="stylesheet" href="game.css" />
+    </head>
+    <body>
+        <div class="gameContainer">
+            <div class="gameOver">Game Over</div>
+            <div class="batman"></div>
+            <div id="scoreCont">Your Score: 0</div>  
+            <div id="namegame">Player Name</div>  
+            <div class="obstacle obstacleanimation"></div>
+        </div>
+        <script src="app.js"></script>
+    
+    <script>
+        var UserId1=localStorage.getItem("UserId",name)
+        console.log(UserId1)
+        var namegame=document.getElementById("namegame")
+        namegame.innerHTML=UserId1
+    </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page2">
+<div class="flex2">
+ <!-- <div id="playername"><p>Enter your Name</p></div>    -->
+<input type="text" id="name" class="name">
+
+ <div id="instructions">
+    <h3>Instructions</h3>
+    <hr>
+    <ul>
+<li>Click/Tap to make the Batman jump.</li>
+<li>Jump over the Buildings and try to score as much as possible.</li>
+<li>If Batman hits the Building the game gets over.</li>
+    </ul>
+ </div>   
+ <div class="button" id="button" onclick="username()"> <a href="./game.html"> Play</a><p class="page2-text"></p></div>   
+
+</div>   
+</div>
+<script src="app.js"></script>
+
+<script>
+    function username(){
+    var name=document.getElementById("name").value
+    var userinput=localStorage.setItem("UserId",name)
+    console.log(name)}
+</script>
+</body>
+</html>
